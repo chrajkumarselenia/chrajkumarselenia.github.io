@@ -393,12 +393,12 @@ var PagesService = (function () {
         this.httpClient = httpClient;
     }
     PagesService.prototype.Login = function (Email, Password) {
-        return this.httpClient.post('http://52.52.49.131/dev_api/users/login', { EMAIL: Email, PASSWORD: Password });
+        return this.httpClient.post('https://52.52.49.131/dev_api/users/login', { EMAIL: Email, PASSWORD: Password });
     };
     PagesService.prototype.Loginb = function (DocumentId, Phone) {
         //this.url='http://52.52.49.131/api/Location/BatteryStatus/+PersonId';
         //return this.httpClient.post('http://52.52.49.131/api/Locations/Login',{DocumentId:DocumentId,Phone:Phone});
-        return this.httpClient.post('http://localhost:65005/api/Locations/Login', { DocumentId: DocumentId, Phone: Phone });
+        return this.httpClient.post('https://localhost:65005/api/Locations/Login', { DocumentId: DocumentId, Phone: Phone });
     };
     PagesService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),

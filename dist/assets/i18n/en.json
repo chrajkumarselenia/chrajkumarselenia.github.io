@@ -1,0 +1,21 @@
+{
+    "demo": {
+        "Pat": "PAT",
+        "Dashboard": "Dashboard",
+        "monitorinmates" :"monitorINMATES",
+        "Viewmap": "View Map",
+        "Addnew": "Add New",
+        "List" : "List",
+        "Maphistory":"Map History",
+        "myTRACKING":"myTRACKING",
+        "Addpadlock":"Add Padlock",
+        "Padlocklist":"Padlock List",
+        "Addcontainer":"Add Container",
+        "Containerlist":"Container List",
+        "Ticketsystems":"Ticket Systems",
+        "Activealerts":"Active Alerts",
+        "Pendingtask":"Pending Task",
+        "ResolvedTask":"Resolved Task",
+        "Ticketreports":"Ticket Reports"
+    }
+}

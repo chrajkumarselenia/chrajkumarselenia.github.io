@@ -1,0 +1,23 @@
+{
+    "demo": {
+        
+        "Dashboard":"Tablero",
+        "Pat" : "Palmadita",
+        "monitorinmates" :"monitoreados",
+        "Viewmap": "Ver mapa",
+        "Addnew": "Agragar nuevo",
+        "List" : "listado",
+        "Maphistory":"Historial",
+        "myTRACKING":"myTRACKING",
+        "Addpadlock":"crear candado",
+        "Padlocklist":"Lista de Canddados",
+        "Addcontainer":"Crear Contenedor",
+        "Containerlist":"Lista de Contenedores",
+        "Ticketsystems":"Sistema de Tickets",
+        "Activealerts":"Tareas Pendientes",
+        "Pendingtask":"Tareas Pendientes",
+        "ResolvedTask":"Tareas Solucionadas",
+        "Ticketreports":"Reportes de Tickets"
+        
+    }
+}

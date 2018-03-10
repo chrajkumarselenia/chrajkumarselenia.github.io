@@ -1,0 +1,90 @@
+<div class="animated fadeIn">
+    <div class="row">
+
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header bg-danger">
+                  <i class="fa fa-align-justify"></i>List of Low Battery Beneficiaries 
+                </div>
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                          <th>
+                              <input type="checkbox" name="all"/>
+                          </th>
+                        <th>FullName</th>
+                        <th>IMEIn</th>                         
+                        <th>Location</th>
+                         <th>BattteryPercentage</th>
+                        <th>chargeStatus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let ab of GetLowList" >
+                        <!-- <ul  *ngFor="let x of ActiveAlerts.ListData">
+                          <li>MySel</li>
+                        </ul> -->
+                        <td>
+                            <input [(ngModel)]='ab.isChecked' type="checkbox"/>
+                        </td>
+                        <td>{{ab.FullName}}</td>
+                        <td>{{ab.IMEIn}}<br/>
+                       
+                        </td>
+                        <td><button class="btn btn-primary">View Location</button></td>
+                        <td>{{ab.battteryPercentage}}</td>
+                        <td>{{ab.chargeStatus}}</td>                   
+                        <td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                    <button (click)="SMS(GetLowList)" class="btn btn-primary float-right">Send SmS</button>
+                  </div>
+                  <!-- <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="">Prev</a></li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul> -->
+                  <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+                  
+                  <!-- <div>
+                      <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+                    </div> -->
+                       
+                              
+                                
+                       
+                      
+                                  <!-- pager -->
+                      <!--             <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+                                      <li [ngClass]="{disabled:pager.currentPage === 1}">
+                                          <a (click)="setPage(1)">First</a>
+                                      </li>
+                                      <li [ngClass]="{disabled:pager.currentPage === 1}">
+                                          <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+                                      </li>
+                                      <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+                                          <a (click)="setPage(page)">{{page}}</a>
+                                      </li>
+                                      <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                                          <a (click)="setPage(pager.currentPage + 1)">Next</a>
+                                      </li>
+                                      <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                                          <a (click)="setPage(pager.totalPages)">Last</a>
+                                      </li>
+                                  </ul> -->
+                            
+                </div>
+              </div>
+      </div>
+    </div><!--/.row-->
+  </div>
